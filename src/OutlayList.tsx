@@ -30,11 +30,10 @@ export const OutlayList = ({ treeNodeList }: OutlayListProps) => {
         </thead>
 
         <tbody>
-          <OutlayListItem />
-          <OutlayListItem />
-          <OutlayListItem />
-          <OutlayListItem />
-          <OutlayListItem />
+          {treeNodeList.map((item) => {
+            console.log(item);
+            return <OutlayListItem item={item} />;
+          })}
         </tbody>
       </table>
     </div>

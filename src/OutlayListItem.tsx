@@ -1,6 +1,11 @@
 import { ListItemIcon, TrashItemIcon } from './assets/icon';
+import { TreeNodeList } from './types';
 
-const OutlayListItem = () => {
+interface TreeNode {
+  item: TreeNodeList;
+}
+
+const OutlayListItem = ({ item }: TreeNode) => {
   return (
     <tr className=''>
       <td className='min-h-16 flex gap-3 relative items-center'>
@@ -17,9 +22,9 @@ const OutlayListItem = () => {
           <TrashItemIcon />
         </button>
       </td>
-      <td className='min-w-[400px]'>Элемент 1</td>
-      <td className='min-w-[200px]'>333</td>
-      <td className='min-w-[200px]'>999</td>
+      <td className='min-w-[400px]'>{item.body.name}</td>
+      <td className='min-w-[200px]'>{item.body.count}</td>
+      <td className='min-w-[200px]'>{item.body.sum}</td>
     </tr>
   );
 };
