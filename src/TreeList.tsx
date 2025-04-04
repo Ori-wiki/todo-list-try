@@ -1,5 +1,17 @@
 import { OutlayList } from './OutlayList';
 
+const treeList = [
+  {
+    body: {
+      id: '3e3e3e',
+      count: 10,
+      sum: 1000,
+      name: 'zxc',
+    },
+    parentId: null,
+  },
+];
+
 export const TreeList = () => {
   return (
     <>
@@ -10,7 +22,7 @@ export const TreeList = () => {
         нажмите иконки в соответствущей строке
       </div>
       <div className=''>
-        <OutlayList />
+        <OutlayList treeNodeList={treeList} />
       </div>
     </>
   );

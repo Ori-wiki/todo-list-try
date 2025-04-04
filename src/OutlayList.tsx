@@ -1,7 +1,12 @@
 import { ListItemIcon } from './assets/icon';
 import OutlayListItem from './OutlayListItem';
+import { TreeNodeList } from './types';
 
-export const OutlayList = () => {
+interface OutlayListProps {
+  treeNodeList: TreeNodeList[];
+}
+
+export const OutlayList = ({ treeNodeList }: OutlayListProps) => {
   return (
     <div className='overflow-y-auto flex-grow flex flex-col'>
       <table className='w-full border-collapse'>
