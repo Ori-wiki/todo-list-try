@@ -8,7 +8,7 @@ interface TreeNode {
 const OutlayListItem = ({ item }: TreeNode) => {
   return (
     <tr className=''>
-      <td className='min-h-16 flex gap-3 relative items-center'>
+      <td className='p-2 min-h-16 flex gap-3 relative items-center'>
         <button
           className='w-8 h-8 relative z-10 flex'
           title='Создать корневой элемент'
@@ -22,9 +22,9 @@ const OutlayListItem = ({ item }: TreeNode) => {
           <TrashItemIcon />
         </button>
       </td>
-      <td className='min-w-[400px]'>{item.body.name}</td>
-      <td className='min-w-[200px]'>{item.body.count}</td>
-      <td className='min-w-[200px]'>{item.body.sum}</td>
+      <td className='p-2 min-w-[400px]'>{item.body.name}</td>
+      <td className='p-2 min-w-[200px]'>{item.body.count}</td>
+      <td className='p-2 min-w-[200px]'>{item.body.sum}</td>
     </tr>
   );
 };

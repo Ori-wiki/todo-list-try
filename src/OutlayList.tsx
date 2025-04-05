@@ -8,11 +8,11 @@ interface OutlayListProps {
 
 export const OutlayList = ({ treeNodeList }: OutlayListProps) => {
   return (
-    <div className='overflow-y-auto flex-grow flex flex-col'>
+    <div className='p-4 overflow-y-auto flex-grow flex flex-col'>
       <table className='w-full border-collapse'>
         <thead>
           <tr className='text-[#A1A1AA] text-left'>
-            <th className=''>
+            <th className='p-2'>
               <span className='flex gap-3 relative items-center'>
                 <button
                   className='w-8 h-8 relative z-10 flex'
@@ -23,9 +23,9 @@ export const OutlayList = ({ treeNodeList }: OutlayListProps) => {
                 <span className=''>Уровень</span>
               </span>
             </th>
-            <th className='min-w-[400px]'>Наименование</th>
-            <th className='min-w-[200px]'>Кол-во</th>
-            <th className='min-w-[200px]'>Сумма</th>
+            <th className='p-2 min-w-[400px]'>Наименование</th>
+            <th className='p-2 min-w-[200px]'>Кол-во</th>
+            <th className='p-2 min-w-[200px]'>Сумма</th>
           </tr>
         </thead>
 

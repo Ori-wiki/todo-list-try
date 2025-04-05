@@ -15,3 +15,11 @@ export interface TreeNodeList {
   body: TreeNodeBody;
   parentId: string | null;
 }
+
+export enum ListPosition {
+  START = '+',
+  END = '-',
+  CENTER = '>',
+  EMPTY = '#',
+  BOUND = '|',
+}
